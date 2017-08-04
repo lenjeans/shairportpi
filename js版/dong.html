@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta content="东哥你太弱了">
+	<title>电视直播</title>
+	<style>
+		.input{position: relative;}
+		body{ padding: 0; margin: 0; }
+		#main{ width: 960px; margin: 10px auto;  padding-bottom: 10px;}
+		#main .img li{list-style: none; float: left; margin: 5px;}
+		#main img{width: 280px;}
+		#main .name li{list-style: none; float: left; width: 280px; height: 20px; margin: 5px 5px; position: relative;}
+		#main .name li a{  position: absolute;left: 0;}
+		#main .name li input { position: absolute;right: 0; }
+	</style>
+	<script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+	<script type="text/javascript" src="./jquery.zclip.js"></script>
+	<script>
+		 function copy(self){
+		// 	//console.log(self);
+ 	// 		var ps = self.parentNode.firstChild;
+ 	// 		var src = ps.href;
+ 	// 		//console.log(src);	
+ 	// 		$(ps).zclip({
+ 	// 			path:'./ZeroClipboard.swf',
+ 	// 			copy:function(){return src;},
+ 	// 			beforeCopy:function(){},
+ 	// 			afterCopy:function(){
+ 	// 				alert("复制成功");
+ 	// 			}
+ 	// 		}
+
+ 	// 			);
+ 	    alert("怎么这么懒，自己右键复制！");
+
+		 }
+		
+	</script>
+</head>
+<body>
+	<div id="main">
+		<ul class="img">
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000215597_0.smil"><img src="./cctvimgs/aa.png" width="133" height="124" /></a></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000219040_0.smil"><img src="./cctvimgs/CCTV.png"></a></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000455205_0.smil"><img src="./cctvimgs/cctv2.jpg"></a></li>
+		</ul>
+		<ul class="name">
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000215597_0.smil">CCTV1</a><div class="input"><input type="button" id="copy" value="复制链接" onclick="copy(this)"></div></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000219040_0.smil">CCTV1高清</a><input type="button" id="copy" value="复制链接" onclick="copy(this)"></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000455205_0.smil">CCTV2</a><input type="button" id="copy" value="复制链接" onclick="copy(this)"></li>
+		</ul>
+</div>
+	<div id="main">
+		<ul class="img">
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000286778_0.smil"><img src="./cctvimgs/cctv2.jpg"></a></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000215615_0.smil"><img src="./cctvimgs/cctv3.jpg"></a></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000216964_0.smil"><img src="./cctvimgs/cctv4.jpg"></a></li>
+		</ul>
+		<ul class="name">
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000286778_0.smil">CCTV2高清</a><div class="input"><input type="button" id="copy" value="复制链接" onclick="copy(this)"></div></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000215615_0.smil">CCTV3</a><input type="button" id="copy" value="复制链接" onclick="copy(this)"></li>
+			<li><a href="rtsp://27.223.126.145/PLTV/8 ... 000000216964_0.smil">CCTV4</a><input type="button" id="copy" value="复制链接" onclick="copy(this)"></li>
+		</ul>
+	</div>
+</body>
+</html>
